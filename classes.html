@@ -41,6 +41,11 @@ a{color:var(--primary)}
 .bar{border-bottom:1px solid var(--line);background:var(--surface)}
 .bar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem}
 .bar b{font-weight:500;font-size:1.15rem}
+.home{color:var(--ink);text-decoration:none}
+.nav{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.nav a:not(.btn){text-decoration:none;color:var(--ink);padding:.45rem .9rem;border-radius:100px;font-weight:500}
+.nav a[aria-current=page]{background:var(--container);color:var(--on-container)}
+@media(max-width:700px){.nav a:not(.btn){display:none}}
 .btn{display:inline-block;background:var(--primary);color:var(--on-primary);font:500 1rem Roboto,system-ui,sans-serif;padding:.75rem 1.6rem;border-radius:100px;text-decoration:none}
 .btn.outline{background:transparent;color:var(--primary);border:1px solid var(--line)}
 main{padding:2.5rem 0 4rem}
@@ -61,7 +66,7 @@ h1{font-size:clamp(2rem,5vw,3.2rem);margin:.25rem 0 .75rem}
 </style>
 </head>
 <body>
-<header class="bar"><div class="wrap"><b>AFILLAL MDS</b><a class="btn outline" href="tel:+919447668055">Call 9447668055</a></div></header>
+<header class="bar"><div class="wrap"><a class="home" href="index_43.html"><b>AFILLAL MDS</b></a><nav class="nav"><a href="index_43.html">Home</a><a href="index_43.html#courses">Courses</a><a href="classes.html" aria-current="page">Classes</a><a class="btn outline" href="tel:+919447668055">Call 9447668055</a></nav></div></header>
 <main><div class="wrap" id="out"></div></main>
 <script>
 /* Edit the class breakdown here. The total is added up automatically. */
